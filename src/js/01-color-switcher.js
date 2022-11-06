@@ -18,17 +18,18 @@ const changeColor = {
     isActive: false,
     start() {
         if (this.isActive) {
-
             return;
         }
         this.isActive = true;
         this.intervalId = setInterval(getRandomHexColor, TIMER);
+
 
     },
     stop() {
         clearInterval(this.intervalId);
         this.isActive = false;
         refs.startBtn.style.backgroundColor = '#fafafa';
+        refs.stopBtn.style.backgroundColor = refs.styleWindow.style.backgroundColor;
     },
   
 };
