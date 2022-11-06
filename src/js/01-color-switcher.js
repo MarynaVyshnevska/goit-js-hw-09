@@ -29,7 +29,6 @@ const changeColor = {
         clearInterval(this.intervalId);
         this.isActive = false;
         refs.startBtn.style.backgroundColor = '#fafafa';
-        refs.stopBtn.style.backgroundColor = newColor;
     },
   
 };
