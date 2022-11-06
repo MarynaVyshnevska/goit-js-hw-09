@@ -21,16 +21,15 @@ const changeColor = {
 
             return;
         }
-        const newColor = refs.styleWindow.style.backgroundColor;
         this.isActive = true;
         this.intervalId = setInterval(getRandomHexColor, TIMER);
+
     },
     stop() {
         clearInterval(this.intervalId);
         this.isActive = false;
         refs.startBtn.style.backgroundColor = '#fafafa';
         refs.stopBtn.style.backgroundColor = newColor;
-        
     },
   
 };
