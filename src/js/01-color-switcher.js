@@ -22,8 +22,6 @@ const changeColor = {
         }
         this.isActive = true;
         this.intervalId = setInterval(getRandomHexColor, TIMER);
-
-
     },
     stop() {
         clearInterval(this.intervalId);
